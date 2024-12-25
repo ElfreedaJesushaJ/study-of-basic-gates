@@ -63,17 +63,54 @@ Y= A⊕B
 
 
 **PROGRAM**
-
+```
 Program for logic gates and verify its truth table in quartus using Verilog programming
 
- Developed by: RegisterNumber: 
+Developed by: ELFREEDA JESUSHA J
+RegisterNumber:24900146
+```
+```
+Gate Flow
+
+module logates(a,b,c1,c2,c3,c4,c5,c6,c7);
+input a,b;
+output c1,c2,c3,c4,c5,c6,c7;
+not g1(c1,a);
+and g2(c2,a,b);
+or g3(c3,a,b);
+nand g4(c4,a,b);
+nor g5(c5,a,b);
+xor g6(c6,a,b);
+xnor g7(c7,a,b);
+endmodule
+
+Data flow
+
+module dfm(a,b,c1,c2,c3,c4,c5,c6,c7);
+input a,b;
+output c1,c2,c3,c4,c5,c6,c7;
+assign c1=~a;
+assign c2=a&b;
+assign c3=a|b;
+assign c4=~(a&b);
+assign c5=~(a|b);
+assign c6=a^b;
+assign c7=~(a^b);
+endmodule
+
+```
  
 **Logic symbol & Truthtable**
+![gates](https://github.com/user-attachments/assets/d91d1d6d-11c4-4266-9bad-7da59c9b57c6)
 
 **RTL realization Output:** 
+![logates rtl](https://github.com/user-attachments/assets/51f6baab-6452-4dc3-91f2-12f6974b7c44)
+![dfm rtl](https://github.com/user-attachments/assets/30cfbf8d-d040-4846-9cec-2fbaef66b765)
 
 **RTL**
+![logates wf](https://github.com/user-attachments/assets/56373f23-bdce-44f3-b402-f88b4bcaffef)
+![dataflow wf](https://github.com/user-attachments/assets/efcc105d-3e6a-405f-a115-021b08c22810)
 
 **Result:**
-
+Thus the basic logic gates are studied and the truth tables are verified.
 
